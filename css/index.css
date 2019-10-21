@@ -291,9 +291,11 @@ body .bottom-nav {
   display: absolute;
   text-align: right;
   margin-top: 210px;
+  background-color: #EDFCFD;
+  padding: 40px;
 }
 body .bottom-nav a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
   color: black;
   padding: 20px;
