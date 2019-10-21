@@ -182,14 +182,10 @@ body .about {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
-  flex-flow: row wrap;
-  color: #171D1C;
 }
 body .about .icon1,
 body .about .icon2,
 body .about .icon3 {
-  font-family: Montserrat;
   width: 30rem;
   margin-top: 200px;
   text-align: center;
@@ -232,6 +228,12 @@ body .content-below-photos {
   text-align: center;
   line-height: 2.7rem;
 }
+body .join {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+}
 body .join .join-title {
   text-align: center;
   padding: 6rem;
@@ -264,12 +266,17 @@ body .interest .left-image {
   border-radius: 8px;
   border: 0.8px solid lightgray;
 }
+body .footer-image {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 body .footer-image .paper-airplane {
   position: absolute;
   padding: 30px;
   opacity: 0.8;
   width: 90%;
-  margin-top: -100px;
+  margin-top: 7%;
 }
 body .footer-image button {
   height: 7rem;
@@ -278,4 +285,16 @@ body .footer-image button {
   background-color: #16BAC5;
   font-size: 2.5rem;
   color: #EFE9F4;
+  margin-top: 15%;
+}
+body .bottom-nav {
+  display: absolute;
+  text-align: right;
+  margin-top: 210px;
+}
+body .bottom-nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
 }

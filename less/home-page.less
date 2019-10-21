@@ -1,11 +1,8 @@
 body {
   .about {
     .displayFlex(space-evenly, center); 
-      width: 100%;
-      flex-flow: row wrap;  
-      color: #171D1C;
+    
   .icon1, .icon2, .icon3 {
-    font-family: Montserrat;
     width: 30rem;
     margin-top: 200px;
     text-align: center;
@@ -52,6 +49,9 @@ body {
   }
 
   .join {
+    .displayFlex(space-evenly, center);
+    flex-flow: row wrap;
+
     .join-title {
       text-align: center;
       padding: 6rem;
@@ -89,12 +89,14 @@ body {
 
   .footer-image {
 
+    .displayFlex(space-evenly, center);
+
     .paper-airplane {
       position: absolute;
       padding: 30px;
       opacity: 0.8;
       width: 90%;
-      margin-top: -100px;
+      margin-top: 7%;
     }
     button {
       height: 7rem;	
@@ -103,8 +105,21 @@ body {
       background-color: #16BAC5;
       font-size: 2.5rem;
       color: #EFE9F4;
+      margin-top: 15%;
     }
   }  
-  
+
+  .bottom-nav {
+    display: absolute;
+    text-align: right;
+    margin-top: 210px;
+
+    a {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: black;
+      padding: 20px;
+    }
+  }  
 
 }
