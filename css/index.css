@@ -1,3 +1,9 @@
+.title {
+  text-align: center;
+  padding: 6rem;
+  color: #65817D;
+  font-size: 3rem;
+}
 html,
 body,
 div,
@@ -172,13 +178,104 @@ header {
   width: 100%;
   flex-direction: row;
 }
-body .background-image {
-  width: 90vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+body .about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  flex-flow: row wrap;
+  color: #171D1C;
 }
-body button {
+body .about .icon1,
+body .about .icon2,
+body .about .icon3 {
+  font-family: Montserrat;
+  width: 30rem;
+  margin-top: 200px;
+  text-align: center;
+  line-height: 2.7rem;
+}
+body .about h1 {
+  font-size: 2rem;
+  padding: 15px;
+}
+body .about .title {
+  position: absolute;
+  color: #65817D;
+  font-size: 3rem;
+  margin-top: -150px;
+}
+body .plane1-background {
+  position: absolute;
+  margin-top: -100px;
+  opacity: 0.5;
+  width: 100vw;
+}
+body .upload-content .upload-title {
+  text-align: center;
+  padding: 6rem;
+  color: #65817D;
+  font-size: 3rem;
+}
+body .upload-content .abroad-photos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .content-below-photos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  font-size: 2rem;
+  padding: 50px;
+  text-align: center;
+  line-height: 2.7rem;
+}
+body .join .join-title {
+  text-align: center;
+  padding: 6rem;
+  color: #65817D;
+  font-size: 3rem;
+}
+body .join .people {
+  width: 100vw;
+  padding: 40px;
+}
+body .join h3 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 4rem;
+  width: 70%;
+  line-height: 2.7rem;
+}
+body .interest .interest-title {
+  text-align: center;
+  padding: 6rem;
+  color: #65817D;
+  font-size: 3rem;
+}
+body .interest .interest-images {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .interest .left-image {
+  border-radius: 8px;
+  border: 0.8px solid lightgray;
+}
+body .footer-image .paper-airplane {
+  position: absolute;
+  padding: 30px;
+  opacity: 0.8;
+  width: 90%;
+  margin-top: -100px;
+}
+body .footer-image button {
+  height: 7rem;
+  width: 30rem;
+  border-radius: 4px;
   background-color: #16BAC5;
+  font-size: 2.5rem;
+  color: #EFE9F4;
 }
