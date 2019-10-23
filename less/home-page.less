@@ -39,10 +39,12 @@ body {
       color: @title-font-color;
       font-size: 3rem;
     }
-    .abroad-photos {
-      .displayFlex(space-evenly, center);      
-    }
   }
+  .abroad-photos2 {
+    position: absolute;
+    left: -9999px;
+  }
+
 
   .content-below-photos {
     .displayFlex(space-evenly, center);
@@ -54,8 +56,7 @@ body {
   }
 
   .join {
-    .displayFlex(space-evenly, center);
-    flex-flow: row wrap;
+    .displayFlex(row wrap, space-evenly, center);
 
     .join-title {
       text-align: center;
