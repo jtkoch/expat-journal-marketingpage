@@ -1,51 +1,49 @@
 body {
   .about {
-    display: flex;
-    flex-flow: row wrap;
     text-align: center;
-
+    width: 100%;
+  
   .icon1, .icon2, .icon3 {
     width: 33%;
-    text-align: center;
-    line-height: 2.7rem;
-    justify-content: space-between;
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 2.8rem;
   }
   h1 {
     font-size: 2rem;
     padding: 15px;
   }
   p {
-    display: none;
+    font-size: 3rem;
+    padding: 5px;
+    margin-top: 40px;
   }
   .title {
     width: 100%;
     color: @title-font-color;
     font-size: 3rem;
-    padding: 40px;
+    padding: 45px;
   }
 }
 
   .plane1-background {
     position: absolute;
     margin-top: -100px;
-    opacity: 0.5;
+    opacity: 20%;
     width: 100vw;
   }
 
   .upload-content {
     .upload-title {
       text-align: center;
-      padding: 6rem;
+      padding: 115px;
       color: @title-font-color;
       font-size: 3rem;
     }
+    .abroad-photos2 {
+      display: none;
+    }
   }
-  .abroad-photos2 {
-    position: absolute;
-    left: -9999px;
-  }
-
-
   .content-below-photos {
     .displayFlex(space-evenly, center);
     width: 100%;
@@ -56,8 +54,8 @@ body {
   }
 
   .join {
-    .displayFlex(row wrap, space-evenly, center);
-
+    .displayFlex(space-evenly, center);
+    flex-flow: row wrap;
     .join-title {
       text-align: center;
       padding: 6rem;
@@ -74,13 +72,14 @@ body {
       padding: 4rem;
       width: 70%;
       line-height: 2.7rem;
+      margin-top: -60px;
     }
   }
 
   .interest {
     .interest-title {
       text-align: center;
-      padding: 6rem;
+      padding: 5rem;
       width: 100%;
       color: @title-font-color;
       font-size: 3rem;
@@ -105,7 +104,7 @@ body {
     .paper-airplane {
       position: absolute;
       padding: 30px;
-      opacity: 0.8;
+      opacity: 20%;
       width: 90%;
       margin-top: 7%;
     }
@@ -116,7 +115,7 @@ body {
       background-color: #16BAC5;
       font-size: 2.5rem;
       color: #EFE9F4;
-      margin-top: 300px;
+      margin-top: 252px;
     }
   }  
 
@@ -149,23 +148,24 @@ body {
         width: 40vw;
       }
       p {
-        display: inherit;
         color: @title-font-color;
       }
     }
 
     .plane1-background {
-      margin-top: -2200px;
+      margin-top: -650px;
       opacity: 10;
     }
 
     .upload-content {
-      margin-top: 100px;
-      .abroad-photos{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
+      margin-top: 190px;
+      text-align: center;
+      .abroad-photos1 {
+        display: none;
+      }
+      .abroad-photos2{
+        display: inherit;
+        display: inline-block
       }
     }
     .content-below-photos {
