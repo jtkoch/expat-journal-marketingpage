@@ -1,0 +1,84 @@
+.bg-image {
+  background-image: url(../img/typewriter-801921_1920.png);
+  height: 60vh;
+  width: 100vw;
+}
+
+.container {
+  width: 100%;
+  margin-left: 20px;
+
+
+  .nav-bar {
+    .displayFlex(space-between, center);
+    width: 100%;
+    align-content: center;
+
+    .logo {
+      width: 33%;
+      margin: 2%;
+    }
+  
+    nav {
+      width: 33%;
+      margin-top: 20px;
+      margin-left: -26%;
+      
+      a {
+      margin-right: 35px;
+      color: @color-a;
+      font-size: 2rem;
+      font-family: Montserrat;
+      text-decoration: none;
+      text-shadow: 2px 2px #000000;
+      }
+    }
+  }  
+    button {
+      width: 10%;
+      border-radius: 10%;
+      height: 40px;
+      background-color: @color-b;
+      margin-top: 10px;
+      margin-right: 2%;
+      color: @color-a;
+      font-family: Montserrat;
+      font-size: 1.7rem;
+    }
+
+  .header-info {
+    .displayFlex(center, center);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    text-shadow: 2px 2px #000000;
+    
+    h1 {
+      color: @color-a;
+      font-size: 4rem;
+      font-family: Montserrat;
+      padding: 1%;
+      margin-left: -1.5%;
+    }
+
+    p {
+      color: @color-a;
+      font-size: 3rem;
+      font-family: Montserrat;
+      margin-left: -1.5%;
+    }
+    
+    .join-our-community {
+      width: 25%;
+      margin-top: 5%;
+      margin-left: -1.5%;
+      border-radius: 5%;
+      background-color: @color-b;
+      color: @color-a;
+      height: 50px;
+      font-size: 2rem;
+      font-family: Montserrat;
+    }      
+  }
+}
