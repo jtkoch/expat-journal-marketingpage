@@ -1,7 +1,8 @@
 .bg-image {
   background-image: url(../img/typewriter-801921_1920.png);
-  height: 60vh;
-  width: 100vw;
+  height: 70vh;
+  width: 99.9vw;
+  margin-left: -1.7%;
 }
 
 .container {
@@ -11,26 +12,25 @@
 
   .nav-bar {
     .displayFlex(space-between, center);
-    width: 100%;
-    align-content: center;
+    width: 100vw;
+    text-align: center;
 
     .logo {
-      width: 33%;
       margin: 2%;
     }
   
     nav {
-      width: 33%;
+      width: 100%;
       margin-top: 20px;
-      margin-left: -26%;
       
       a {
-      margin-right: 35px;
+      padding: 5%;
       color: @color-a;
       font-size: 2rem;
       font-family: Montserrat;
       text-decoration: none;
       text-shadow: 2px 2px #000000;
+      align-items: center;
       }
     }
   }  
@@ -45,13 +45,17 @@
       font-family: Montserrat;
       font-size: 1.7rem;
     }
+    button:hover {
+      background-color: @color-a;
+      color: @color-b;
+    }
 
   .header-info {
     .displayFlex(center, center);
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 0 auto;
+    margin: 2%;
     text-shadow: 2px 2px #000000;
     
     h1 {
@@ -70,15 +74,52 @@
     }
     
     .join-our-community {
-      width: 25%;
+      width: 30%;
       margin-top: 5%;
-      margin-left: -1.5%;
+      margin-left: -1%;
       border-radius: 5%;
       background-color: @color-b;
       color: @color-a;
       height: 50px;
       font-size: 2rem;
       font-family: Montserrat;
-    }      
+    }
+    .join-our-community:hover {
+      background-color: @color-a;
+      color: @color-b;
+    }     
+  }
+}
+
+@media @phone {
+  .bg-image {
+    height: 85vh;
+  }
+
+  .container {
+    .nav-bar {
+      button, .logo {
+        width: 33%;
+      }    
+      a {
+        .displayFlex(space-evenly, center);
+      }
+    }
+  
+
+  .header-info {
+    h1 {
+      font-size: 3rem;
+      margin-top: 15%;
+    }
+    p {
+      font-size: 2rem;
+      margin: 5%;
+    }
+    .join-our-community {
+      width: 65%;
+      margin-top: 12%;
+      }
+    }
   }
 }

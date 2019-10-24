@@ -172,8 +172,9 @@ img {
 }
 .bg-image {
   background-image: url(../img/typewriter-801921_1920.png);
-  height: 60vh;
-  width: 100vw;
+  height: 70vh;
+  width: 99.9vw;
+  margin-left: -1.7%;
 }
 .container {
   width: 100%;
@@ -183,25 +184,24 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  align-content: center;
+  width: 100vw;
+  text-align: center;
 }
 .container .nav-bar .logo {
-  width: 33%;
   margin: 2%;
 }
 .container .nav-bar nav {
-  width: 33%;
+  width: 100%;
   margin-top: 20px;
-  margin-left: -26%;
 }
 .container .nav-bar nav a {
-  margin-right: 35px;
+  padding: 5%;
   color: white;
   font-size: 2rem;
   font-family: Montserrat;
   text-decoration: none;
   text-shadow: 2px 2px #000000;
+  align-items: center;
 }
 .container button {
   width: 10%;
@@ -214,13 +214,17 @@ img {
   font-family: Montserrat;
   font-size: 1.7rem;
 }
+.container button:hover {
+  background-color: white;
+  color: lightseagreen;
+}
 .container .header-info {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 0 auto;
+  margin: 2%;
   text-shadow: 2px 2px #000000;
 }
 .container .header-info h1 {
@@ -237,15 +241,45 @@ img {
   margin-left: -1.5%;
 }
 .container .header-info .join-our-community {
-  width: 25%;
+  width: 30%;
   margin-top: 5%;
-  margin-left: -1.5%;
+  margin-left: -1%;
   border-radius: 5%;
   background-color: lightseagreen;
   color: white;
   height: 50px;
   font-size: 2rem;
   font-family: Montserrat;
+}
+.container .header-info .join-our-community:hover {
+  background-color: white;
+  color: lightseagreen;
+}
+@media (max-width: 500px) {
+  .bg-image {
+    height: 85vh;
+  }
+  .container .nav-bar button,
+  .container .nav-bar .logo {
+    width: 33%;
+  }
+  .container .nav-bar a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .container .header-info h1 {
+    font-size: 3rem;
+    margin-top: 15%;
+  }
+  .container .header-info p {
+    font-size: 2rem;
+    margin: 5%;
+  }
+  .container .header-info .join-our-community {
+    width: 65%;
+    margin-top: 12%;
+  }
 }
 body .about {
   text-align: center;
@@ -354,7 +388,7 @@ body .footer-image .paper-airplane {
   width: 90%;
   margin-top: 7%;
 }
-body .footer-image button {
+body .footer-image .join-our-community {
   height: 7rem;
   width: 30rem;
   border-radius: 4px;
@@ -362,6 +396,10 @@ body .footer-image button {
   font-size: 2.5rem;
   color: #EFE9F4;
   margin-top: 252px;
+}
+body .footer-image .join-our-community:hover {
+  background-color: white;
+  color: lightseagreen;
 }
 body .bottom-nav {
   display: absolute;
