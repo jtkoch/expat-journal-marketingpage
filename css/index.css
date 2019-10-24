@@ -182,14 +182,17 @@ body .about .icon3 {
   vertical-align: bottom;
   line-height: 2.8rem;
 }
-body .about h1 {
-  font-size: 2rem;
-  padding: 15px;
+body .about .join {
+  margin-left: 22%;
 }
-body .about p {
+body .about h1 {
   font-size: 3rem;
   padding: 5px;
   margin-top: 40px;
+}
+body .about p {
+  font-size: 2rem;
+  padding: 15px;
 }
 body .about .title {
   text-align: center;
@@ -312,6 +315,9 @@ body .bottom-nav a {
     margin-left: 150px;
     margin-top: 50px;
     width: 40vw;
+  }
+  body .about .join {
+    margin-left: 0%;
   }
   body .about p {
     color: #65817D;
