@@ -1,0 +1,10 @@
+{
+  "name": "expat-journal-marketingpage",
+  "version": "1.0",
+  "description": "marketingpage",
+  "main": "index.js",
+  "repository": "https://github.com/jtkoch/expat-journal-marketingpage.git",
+  "author": "Jensen Koch",
+  "license": "MIT",
+  "private": false
+}
