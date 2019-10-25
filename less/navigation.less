@@ -1,7 +1,125 @@
-header {
-  .displayFlex(space-between, center);
-  padding: 2px;  
-  width: 100%;
-  flex-direction: row;
+.bg-image {
+  background-image: url(../img/typewriter-801921_1920.png);
+  height: 70vh;
+  width: 99.9vw;
+  margin-left: -1.7%;
+}
 
+.container {
+  width: 100%;
+  margin-left: 20px;
+
+
+  .nav-bar {
+    .displayFlex(space-between, center);
+    width: 100vw;
+    text-align: center;
+
+    .logo {
+      margin: 2%;
+    }
+  
+    nav {
+      width: 100%;
+      margin-top: 20px;
+      
+      a {
+      padding: 5%;
+      color: @color-a;
+      font-size: 2rem;
+      font-family: Montserrat;
+      text-decoration: none;
+      text-shadow: 2px 2px #000000;
+      align-items: center;
+      }
+    }
+  }  
+    button {
+      width: 10%;
+      border-radius: 10%;
+      height: 40px;
+      background-color: @color-b;
+      margin-top: 10px;
+      margin-right: 2%;
+      color: @color-a;
+      font-family: Montserrat;
+      font-size: 1.7rem;
+    }
+    button:hover {
+      background-color: @color-a;
+      color: @color-b;
+    }
+
+  .header-info {
+    .displayFlex(center, center);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2%;
+    text-shadow: 2px 2px #000000;
+    
+    h1 {
+      color: @color-a;
+      font-size: 4rem;
+      font-family: Montserrat;
+      padding: 1%;
+      margin-left: -1.5%;
+    }
+
+    p {
+      color: @color-a;
+      font-size: 3rem;
+      font-family: Montserrat;
+      margin-left: -1.5%;
+    }
+    
+    .join-our-community {
+      width: 30%;
+      margin-top: 5%;
+      margin-left: -1%;
+      border-radius: 5%;
+      background-color: @color-b;
+      color: @color-a;
+      height: 50px;
+      font-size: 2rem;
+      font-family: Montserrat;
+    }
+    .join-our-community:hover {
+      background-color: @color-a;
+      color: @color-b;
+    }     
+  }
+}
+
+@media @phone {
+  .bg-image {
+    height: 85vh;
+  }
+
+  .container {
+    .nav-bar {
+      button, .logo {
+        width: 33%;
+      }    
+      a {
+        .displayFlex(space-evenly, center);
+      }
+    }
+  
+
+  .header-info {
+    h1 {
+      font-size: 3rem;
+      margin-top: 15%;
+    }
+    p {
+      font-size: 2rem;
+      margin: 5%;
+    }
+    .join-our-community {
+      width: 65%;
+      margin-top: 12%;
+      }
+    }
+  }
 }
